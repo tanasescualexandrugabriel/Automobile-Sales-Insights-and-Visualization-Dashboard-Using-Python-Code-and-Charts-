@@ -1,7 +1,10 @@
 # Automobile-Sales-Insights-and-Visualization-Dashboard-Using-Python-Code-and-Charts-
 This project explores automobile sales trends through data visualization and an interactive dashboard. Using Matplotlib, Seaborn, and Dash, it analyzes how recession periods, seasonal changes, and economic factors like GDP and unemployment rates impact sales, providing insights into market patterns and trends.
 
+
 Project Tasks Overview:
+You can open the .py files using Visual Studio Code to view the code. The code is also documented in corresponding .txt files. Additionally, images (charts) illustrating the data visualizations are included in the project.
+
 Task 1: Data Visualization (Using Matplotlib)
 Task 1.1: Line Plot of Automobile Sales Fluctuations Over the Years
 Creates a line chart to observe fluctuations in automobile sales over multiple years, helping to identify overall trends of increase and decrease in sales.
