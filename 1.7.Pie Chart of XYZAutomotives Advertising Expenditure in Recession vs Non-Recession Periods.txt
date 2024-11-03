@@ -1,0 +1,20 @@
+This pie chart displays the proportion of XYZAutomotives' advertising expenditure during recession and non-recession periods. The aim is to visually compare how much the company allocates for advertising in each economic scenario.
+
+Here’s the Python code i used for generating the pie chart:
+
+# Sample data for advertising expenditure during recession vs non-recession
+labels = ['Recession', 'Non-Recession']
+ad_expenditure = [300000, 700000]
+colors = ['lightcoral', 'lightblue']
+
+# Create pie chart
+plt.pie(ad_expenditure, labels=labels, colors=colors, autopct='%1.1f%%', startangle=90)
+
+# Equal aspect ratio ensures that pie is drawn as a circle.
+plt.axis('equal')
+
+# Add title
+plt.title('Pie Chart of XYZAutomotives Advertising Expenditure in Recession vs Non-Recession')
+
+# Show the plot
+plt.show()

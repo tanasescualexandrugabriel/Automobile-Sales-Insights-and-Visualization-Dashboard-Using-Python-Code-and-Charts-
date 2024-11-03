@@ -1,0 +1,14 @@
+This bubble plot displays the effect of seasonality on automobile sales. Each bubble represents a different season (Winter, Spring, Summer, Fall), with the size of the bubble corresponding to the sales volume. The goal is to visualize how different seasons impact the sales volume of automobiles.
+
+Here’s the Python code i used to generate the bubble plot:
+
+# Sample data for automobile sales with seasonality impact
+seasons = ['Winter', 'Spring', 'Summer', 'Fall']
+sales = [500, 800, 950, 700]
+bubble_size = [300, 500, 800, 400]
+
+plt.scatter(seasons, sales, s=bubble_size, alpha=0.5, color='blue')
+plt.title('Bubble Plot Showing Seasonality Impact on Automobile Sales')
+plt.xlabel('Seasons')
+plt.ylabel('Sales Volume')
+plt.show()

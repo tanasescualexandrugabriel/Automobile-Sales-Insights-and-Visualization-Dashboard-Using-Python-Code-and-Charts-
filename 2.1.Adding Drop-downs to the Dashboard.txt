@@ -1,0 +1,32 @@
+This task involves adding drop-down menus to the dashboard for user selection. These menus allow users to choose different vehicle types, time periods, or economic indicators, enabling dynamic updates in the dashboard visuals.
+
+Here’s the Python code i used to add drop-downs in Dash:
+
+
+
+# Initialize the Dash app
+app = dash.Dash(__name__)
+
+# Create the layout with a title and drop-down
+app.layout = html.Div(children=[
+    html.H1(children='Automobile Sales and Economic Impact Analysis Dashboard'),
+
+    # Drop-down for selecting vehicle type
+    html.Label('Select Vehicle Type'),
+    dcc.Dropdown(
+        id='vehicle-type-dropdown',
+        options=[
+            {'label': 'Sedan', 'value': 'SEDAN'},
+            {'label': 'SUV', 'value': 'SUV'},
+            {'label': 'Truck', 'value': 'TRUCK'}
+        ],
+        value='SEDAN'  # Default value
+    ),
+
+    # Placeholder for a graph (to be populated later)
+    dcc.Graph(id='example-graph')
+])
+
+# Run the app
+if __name__ == '__main__':
+    app.run_server(debug=True)

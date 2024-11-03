@@ -1,0 +1,18 @@
+In this task, i created a simple Dash application and set a meaningful title. The application will be used to analyze automobile sales data, economic indicators such as GDP and unemployment rate, and visualize trends during recession and non-recession periods.
+
+Here’s the Python code i used to set up the Dash application:
+
+
+
+# Initialize the Dash app
+app = dash.Dash(__name__)
+
+# Create the layout with a meaningful title
+app.layout = html.Div(children=[
+    html.H1(children='Automobile Sales and Economic Impact Analysis Dashboard'),
+    dcc.Graph(id='example-graph'),
+])
+
+# Run the app
+if __name__ == '__main__':
+    app.run_server(debug=True)
